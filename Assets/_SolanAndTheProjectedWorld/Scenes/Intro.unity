@@ -1064,6 +1064,18 @@ MonoBehaviour:
         m_CallState: 2
   receiveValidity:
     field: {fileID: 0}
+--- !u!114 &296185490 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2884100000674580290, guid: fe6a616c6215faa47b11c459561a0e7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 23930395}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f782494a9252d49a470301a5b749ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &314371817
 GameObject:
   m_ObjectHideFlags: 0
@@ -4359,6 +4371,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Locomotors.AxisMove.Vertical-Slide.Horizontal-SnapRotate
       objectReference: {fileID: 0}
+    - target: {fileID: 8217565341955995875, guid: a3cddbf3b4be2f1419f0ec6be21906e1,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2052227948}
+    - target: {fileID: 8217565341955995875, guid: a3cddbf3b4be2f1419f0ec6be21906e1,
+        type: 3}
+      propertyPath: verticalAxis
+      value: 
+      objectReference: {fileID: 296185490}
+    - target: {fileID: 8217565341955995875, guid: a3cddbf3b4be2f1419f0ec6be21906e1,
+        type: 3}
+      propertyPath: forwardOffset
+      value: 
+      objectReference: {fileID: 349017439}
+    - target: {fileID: 8217565341955995875, guid: a3cddbf3b4be2f1419f0ec6be21906e1,
+        type: 3}
+      propertyPath: rotationPivot
+      value: 
+      objectReference: {fileID: 1527976720}
+    - target: {fileID: 8217565341955995875, guid: a3cddbf3b4be2f1419f0ec6be21906e1,
+        type: 3}
+      propertyPath: horizontalAxis
+      value: 
+      objectReference: {fileID: 1278515394}
+    - target: {fileID: 8217565341955995875, guid: a3cddbf3b4be2f1419f0ec6be21906e1,
+        type: 3}
+      propertyPath: sceneCameras.field
+      value: 
+      objectReference: {fileID: 789445507}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4981,6 +5023,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28a4bc63ff20fc44eaf9f7df2324bf64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1278515394 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2884100000812411014, guid: fe6a616c6215faa47b11c459561a0e7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 23930395}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f782494a9252d49a470301a5b749ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1331191612 stripped
