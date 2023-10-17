@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnArrow : MonoBehaviour
 {
 
-    public InteractableFacade arrowPrefab;
+    public GameObject arrowPrefab;
 
     public void OnTriggerEnter(Collider other) {
         CreateArrow(other);
@@ -20,8 +20,10 @@ public class SpawnArrow : MonoBehaviour
         InteractorFacade interactor = other.gameObject.GetComponentInParent<InteractorFacade>();
 
         if (interactor != null && interactor.GrabAction.IsActivated && interactor.GrabbedObjects.Count == 0) {
-            InteractableFacade arrow = Instantiate(arrowPrefab);
-            arrow.GrabAtEndOfFrame(interactor); //for some reason if we dont wait till end of frame, it sets KinmeaticWhenInactive
+            var arrow = Instantiate(arrowPrefab);
+            var interactable = arrow.GetComponentInChildren<InteractableFacade>();
+            
+            interactable.GrabAtEndOfFrame(interactor); //for some reason if we dont wait till end of frame, it sets KinmeaticWhenInactive
         }
     }
 }

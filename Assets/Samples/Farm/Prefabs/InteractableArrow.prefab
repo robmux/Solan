@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e713dc0244ac5e84cb1a74be26490070, type: 2}
+  - {fileID: 2100000, guid: f814772ad5aa3db49815f204fa83d59b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1011,7 +1011,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 600
+    maxNumParticles: 300
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -1277,7 +1277,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 400
+      scalar: 300
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -3966,19 +3966,19 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 0, b: 0, a: 1}
-        key1: {r: 0.1802243, g: 0.8490566, b: 0.2382141, a: 1}
-        key2: {r: 0.9469855, g: 1, b: 0, a: 0}
-        key3: {r: 1, g: 0.042452812, b: 0.9398396, a: 0}
-        key4: {r: 0.0990566, g: 0.2703938, b: 1, a: 0}
+        key0: {r: 0.43070316, g: 0.4339623, b: 0.37459952, a: 1}
+        key1: {r: 0.5471698, g: 0.40521538, b: 0.40521538, a: 1}
+        key2: {r: 0.5471698, g: 0.40521538, b: 0.40521538, a: 0}
+        key3: {r: 0.5471698, g: 0.40521538, b: 0.40521538, a: 0}
+        key4: {r: 0.5471698, g: 0.40521538, b: 0.40521538, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 0
-        ctime1: 18119
-        ctime2: 34117
-        ctime3: 48188
-        ctime4: 65535
+        ctime0: 15806
+        ctime1: 36623
+        ctime2: 52428
+        ctime3: 27178
+        ctime4: 27178
         ctime5: 0
         ctime6: 0
         ctime7: 0
@@ -3991,8 +3991,8 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_ColorSpace: -1
-        m_NumColorKeys: 5
+        m_ColorSpace: 0
+        m_NumColorKeys: 3
         m_NumAlphaKeys: 2
       minGradient:
         serializedVersion: 2
@@ -5286,7 +5286,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5660812428235318162}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 644b3593d885df94c9ef201d86ae5da3, type: 3}
@@ -5577,7 +5577,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1a6a26a3e41801d498ad2ae0ddf2e354, type: 2}
+  - {fileID: 2100000, guid: c157ab23d80c45142b6cd24f2e3b72ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
