@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/_SolanAndTheProjectedWorld/Scenes/User Interface.unity
+    guid: e38872e55e21fcf4c8c98e0492b87315
+  - enabled: 1
+    path: Assets/_SolanAndTheProjectedWorld/Scenes/Intro.unity
+    guid: 4e6bd9c126eb42045bcfc527cbd555d1
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7453a7b3e71f77845aef464b65042ea5,
       type: 2}

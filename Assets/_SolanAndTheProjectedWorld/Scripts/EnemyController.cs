@@ -10,6 +10,8 @@ public class EnemyController : MonoBehaviour
 
     public float minimumDistance = 2f;
 
+    public int arrowDamage = 10;
+
     public string playerTag = "PseudoBody"; // Set the player tag in the editor.
     public string whatHitsTag = "FireableArrow";
     
@@ -144,7 +146,7 @@ public class EnemyController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(whatHitsTag))
         {
-            HandleArrowHit(10); // You can adjust the damage value as needed.
+            HandleArrowHit(arrowDamage); // You can adjust the damage value as needed.
         }
     }
 
@@ -155,13 +157,17 @@ public class EnemyController : MonoBehaviour
         if (_currentHealth <= 0)
         {
             Die();
+            return;
         }
+
+        Debug.Log("Kera is still alive and doing well with terror");
     }
 
     void Die()
     {
         animator.SetTrigger(deathTriggerStateName); // Trigger the death animation.
-        navMeshAgent.enabled = false; // Disable NavMeshAgent when the enemy is dead.
+        navMeshAgent.enabled = false;
+        navMeshAgent.angularSpeed = 0f; // Stop rotating.
         // Handle other death-related logic as needed.
     }
 }
