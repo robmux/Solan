@@ -17,9 +17,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.099999666
   m_TransitionOffset: 0
-  m_ExitTime: 0.75
+  m_ExitTime: 0.3213674
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -66,7 +66,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: SwipingAttack
+    m_ConditionEvent: IsAttacking
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3365265232265098480}
@@ -91,7 +91,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: SwipingAttack
+    m_ConditionEvent: IsAttacking
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4401550331765164130}
@@ -144,7 +144,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: Running
+    m_ConditionEvent: IsRunning
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4401550331765164130}
@@ -154,7 +154,7 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
-  m_ExitTime: 0.7115385
+  m_ExitTime: 0.2
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -169,7 +169,7 @@ AnimatorController:
   m_Name: KeraAnimatorController
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Running
+  - m_Name: IsRunning
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -181,7 +181,13 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: SwipingAttack
+  - m_Name: IsAttacking
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: IsIdle
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -293,7 +299,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Running
+    m_ConditionEvent: IsRunning
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4924724386673321554}
@@ -303,7 +309,7 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
-  m_ExitTime: 0.2
+  m_ExitTime: 0.1
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0

@@ -1,19 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using Tilia.Trackers.PseudoBody;
 using UnityEngine;
 
 public class TogglePseudoBody : MonoBehaviour
 {
     private GameObject pseudoBody;
     private bool isPseudoBodyActive;
-
-    private void Start()
+    
+    public void Initialize(GameObject pseudoBodyReference)
     {
-        // Find the game object with the "PseudoBody" tag at the start.
-        pseudoBody = GameObject.FindGameObjectWithTag("PseudoBody");
-        isPseudoBodyActive = pseudoBody != null && pseudoBody.activeSelf;
+        pseudoBody = pseudoBodyReference;
     }
-
+    
     // Function to enable the game object with the "PseudoBody" tag.
     public void EnablePseudoBody()
     {
